@@ -27,12 +27,14 @@
           align="left"
           flat
           class="col"
+          to="comprar-curso"
         >R$ {{curso.preco}}</q-btn>
 
         <q-btn
           class="col bg-info"
           flat
           label="Saiba Mais"
+          to="detalhes-curso"
         />
       </q-card-actions>
     </q-card>

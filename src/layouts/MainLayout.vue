@@ -1,23 +1,39 @@
 <template>
   <q-layout view="lHh Lpr lFf">
     <q-header elevated>
-      <q-toolbar>
+      <q-toolbar class="row">
         <q-btn
+          class="col-1"
           flat
           dense
-          round
           icon="menu"
           aria-label="Menu"
           @click="leftDrawerOpen = !leftDrawerOpen"
         />
 
-        <q-toolbar-title class="text-center">
+        <q-toolbar-title
+          class="text-center col">
           EADInclusivo
         </q-toolbar-title>
 
-        <q-btn flat round dense icon="account_circle" to="controle"/>
+        <q-btn
+          class="col-1"
+          flat
+          dense
+          icon="search"
+          @click="search = !search"
+        />
+
+        <q-btn
+          class="col-1"
+          flat
+          dense
+          icon="account_circle"
+          to="controle"
+        />
 
       </q-toolbar>
+
     </q-header>
 
     <q-drawer
@@ -36,6 +52,16 @@
     </q-drawer>
 
     <q-page-container>
+      <div class="row">
+        <q-input
+          class="offset-1 col-10 bg-blue-2 q-pl-sm"
+          dense
+          v-if="search"
+          input-class="text-center q-pr-sm"
+          label="pesquisar"
+        />
+    </div>
+
       <router-view />
     </q-page-container>
   </q-layout>
@@ -83,6 +109,7 @@ export default {
   data () {
     return {
       leftDrawerOpen: false,
+      search: false,
       essentialLinks: linksData
     }
   }
