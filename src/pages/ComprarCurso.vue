@@ -101,7 +101,7 @@ export default {
         descricao: 'Descricao do primeiro Curso em poucas Palavras',
         preco: '120.00'
       },
-      bandeiras: ['Visa', 'MasterCard', 'Hipercard', 'Elo', 'American Express'],
+      bandeiras: ['Visa', 'MasterCard', 'Hipercard', 'Elo', 'DanielCard', 'American Express'],
       parcelas: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
       cartao: {
         nome: null,
