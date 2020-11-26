@@ -1,4 +1,4 @@
-# EADInclusivo (eadinclusivo_vuejs)
+# Quasar App (pagina-curso)
 
 A Quasar Framework app
 

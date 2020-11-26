@@ -20,13 +20,11 @@ module.exports = function (/* ctx */) {
     // https://quasar.dev/quasar-cli/boot-files
     boot: [
 
-      'i18n',
-      'axios'
     ],
 
     // https://quasar.dev/quasar-cli/quasar-conf-js#Property%3A-css
     css: [
-      'app.styl'
+      'app.sass'
     ],
 
     // https://github.com/quasarframework/quasar/tree/dev/extras
@@ -84,7 +82,7 @@ module.exports = function (/* ctx */) {
     // https://quasar.dev/quasar-cli/quasar-conf-js#Property%3A-framework
     framework: {
       iconSet: 'material-icons', // Quasar icon set
-      lang: 'pt-br', // Quasar language pack
+      lang: 'en-us', // Quasar language pack
       config: {},
 
       // Possible values for "importStrategy":
@@ -117,13 +115,13 @@ module.exports = function (/* ctx */) {
       workboxPluginMode: 'GenerateSW', // 'GenerateSW' or 'InjectManifest'
       workboxOptions: {}, // only for GenerateSW
       manifest: {
-        name: 'EADInclusivo',
-        short_name: 'EADInclusivo',
+        name: 'Quasar App',
+        short_name: 'Quasar App',
         description: 'A Quasar Framework app',
         display: 'standalone',
         orientation: 'portrait',
-        background_color: '#C5CAE9',
-        theme_color: '#004D92',
+        background_color: '#ffffff',
+        theme_color: '#027be3',
         icons: [
           {
             src: 'icons/icon-128x128.png',
@@ -184,7 +182,7 @@ module.exports = function (/* ctx */) {
       builder: {
         // https://www.electron.build/configuration/configuration
 
-        appId: 'eadinclusivo_vuejs'
+        appId: 'pagina-curso'
       },
 
       // More info: https://quasar.dev/quasar-cli/developing-electron-apps/node-integration
