@@ -2,7 +2,7 @@
   "name": "pagina-curso",
   "version": "0.0.1",
   "description": "A Quasar Framework app",
-  "productName": "Quasar App",
+  "productName": "Página curso",
   "author": "Your Name <you@example.com>",
   "private": true,
   "scripts": {
